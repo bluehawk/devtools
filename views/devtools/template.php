@@ -150,7 +150,7 @@ small { font-size:0.8em; }
 
 #wrap { width:960px; margin:0 auto; }
 
-#menu { width:148px; padding:0 20px; float:left; border-right:2px solid #ddd; }
+#menu { width:168px; padding:0 20px 0 0; float:left; border-right:2px solid #ddd; }
 #menu h2 { text-align:right; }
 #menu h2 small { font-size:0.7em }
 #menu ul { list-style:none; padding:0; margin:0; text-align:right; }
@@ -172,7 +172,7 @@ small { font-size:0.8em; }
 			<h2>devtools<br /><small> by bluehawk</small></h3>
 			<ul>
 				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'info')),'Kohana info',array('class'=>($action=='info'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'extension')),'Trans. extension',array('class'=>($action=='extension'?'active':''))) ?></li>
+				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'extension')),'Transparent extension',array('class'=>($action=='extension'?'active':''))) ?></li>
 				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'routetest')),'Route tester',array('class'=>($action=='routetest'?'active':''))) ?></li>
 				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'routes')),'Route dump',array('class'=>($action=='routes'?'active':''))) ?></li>
 				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'config')),'Config dump',array('class'=>($action=='config'?'active':''))) ?></li>
