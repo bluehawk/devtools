@@ -8,10 +8,12 @@
 foreach ($classes as $key => $value)
 {
 	$class = substr($key,8,-strlen(EXT));
-	$found = array_reverse(Kohana::find_file('classes',$class,NULL,TRUE));
+	$found = Kohana::find_file('classes',$class,NULL,TRUE);
 	
 	if (count($found) > 1)
 	{
+		$found = array_reverse($found);
+		
 		echo "<strong>$key</strong> is being transparently extended:";
 		echo "<pre>";
 		foreach($found as $path)
