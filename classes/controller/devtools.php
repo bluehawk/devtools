@@ -108,4 +108,15 @@ class Controller_devtools extends Controller {
 		$this->template->content = View::factory('devtools/i18n',array('i18n'=>$i18n));
 	}
 
+
+	/**
+	 * Check PHP files for open/close tags
+	 */
+	public function action_phpcheck()
+	{
+		$class_files = Kohana::list_files('classes');
+		$this->template->content = View::factory('devtools/phpcheck',array('class_files'=>$class_files));
+	}
+
+
 }
