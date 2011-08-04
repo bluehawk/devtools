@@ -11,7 +11,7 @@ class Controller_devtools extends Controller {
 	
 	public function after()
 	{
-		$this->request->response = $this->template;
+		$this->response->body($this->template->render());
 	}
 
 	/**

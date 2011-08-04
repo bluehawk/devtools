@@ -166,7 +166,7 @@ small { font-size:0.8em; }
 </head>
 <body>
 	
-	<?php $action = Request::instance()->action; ?>
+	<?php $action = Request::$current->action(); ?>
 	<div id="wrap">
 		<div id="menu">
 			<h2>devtools<br /><small> by bluehawk</small></h3>

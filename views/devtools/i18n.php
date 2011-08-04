@@ -8,7 +8,7 @@ foreach ($i18n as $path => $name)
 	
 	try
 	{
-		echo Kohana::debug(I18n::load($name));
+		echo Debug::dump(I18n::load($name));
 	}
 	catch (exception $e)
 	{

@@ -58,7 +58,7 @@ class Devtools_Route extends Kohana_Route {
 		// If no url provide, use the current url
 		if ($urls === NULL)
 		{
-			$urls = Request::instance()->uri;
+			$urls = Request::$current->uri;
 		}
 		return View::factory('devtools/route-test',array(
 			// Get all the tests
