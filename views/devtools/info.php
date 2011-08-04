@@ -47,13 +47,13 @@
 		</tr>
 		<tr>
 			<th>Kohana::init() settings</th>
-			<td><code>"base_url" = <?php echo Kohana::dump(Kohana::$base_url) ?><br />
-			"index_file" = <?php echo Kohana::dump(Kohana::$index_file) ?><br />
-			"charset" = <?php echo Kohana::dump(Kohana::$charset) ?><br />
-			"cache_dir" = <?php echo Kohana::dump(Kohana::$cache_dir) ?><br />
-			"errors" = <?php echo Kohana::dump(Kohana::$errors) ?><br />
-			"profile" = <?php echo Kohana::dump(Kohana::$profiling) ?><br />
-			"caching" = <?php echo Kohana::dump(Kohana::$caching) ?></code></td>
+			<td><code>"base_url" = <?php echo Debug::dump(Kohana::$base_url) ?><br />
+			"index_file" = <?php echo Debug::dump(Kohana::$index_file) ?><br />
+			"charset" = <?php echo Debug::dump(Kohana::$charset) ?><br />
+			"cache_dir" = <?php echo Debug::dump(Kohana::$cache_dir) ?><br />
+			"errors" = <?php echo Debug::dump(Kohana::$errors) ?><br />
+			"profile" = <?php echo Debug::dump(Kohana::$profiling) ?><br />
+			"caching" = <?php echo Debug::dump(Kohana::$caching) ?></code></td>
 		</tr>
 	</table>
 	
