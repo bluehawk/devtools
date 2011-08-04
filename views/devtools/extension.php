@@ -18,7 +18,7 @@ foreach ($classes as $key => $value)
 		echo "<pre>";
 		foreach($found as $path)
 		{
-			echo "    ".Kohana::debug_path($path)."\n";
+			echo "    ".Debug::path($path)."\n";
 		}
 		echo "</pre>";
 	}

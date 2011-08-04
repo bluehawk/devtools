@@ -8,7 +8,7 @@ foreach ($messages as $path => $name)
 	
 	try
 	{
-		echo Kohana::debug(Kohana::message($name));
+		echo Debug::dump(Kohana::message($name));
 	}
 	catch (exception $e)
 	{
