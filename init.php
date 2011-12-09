@@ -7,4 +7,4 @@ Route::set('devtools','devtools(/<action>)')
 	));
 	
 if (Kohana::$environment != Kohana::DEVELOPMENT)
-	throw new Kohana_Exception('Devtools should not be enabled when not in development.  Check your environment variable, or disable the devtools module.');
+	throw new Kohana_Exception('Devtools should not be enabled when not in development. Check your environment variable, or disable the devtools module.');

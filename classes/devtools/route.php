@@ -48,7 +48,7 @@ class Devtools_Route extends Kohana_Route {
 	 * for example in `application/config/my-route-tests.php` return an array
 	 * similar to the previous examples then call:
 	 *
-	 *     echo Route::test(Kohana::config('your-route-tests'));
+	 *     echo Route::test(Kohana::config->load('your-route-tests'));
 	 *
 	 *@author    Michael Peters
 	 *@license   http://creativecommons.org/licenses/by-sa/3.0/
