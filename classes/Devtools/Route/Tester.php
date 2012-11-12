@@ -52,7 +52,7 @@ class Devtools_Route_Tester {
 			// Test each route, and save the route and params if it matches
 			foreach (Route::all() as $route)
 			{
-				if ($current->params = $route->matches($current->url))
+				if ($current->params = $route->matches(Request::factory($current->url)))
 				{
 					$current->route = Route::name($route);
 					$current->params = array_merge(array('route'=>$current->route),$current->params);
