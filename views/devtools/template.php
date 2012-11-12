@@ -171,13 +171,13 @@ small { font-size:0.8em; }
 		<div id="menu">
 			<h2>devtools<br /><small> by bluehawk</small></h3>
 			<ul>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'info')),'Kohana info',array('class'=>($action=='info'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'extension')),'Transparent extension',array('class'=>($action=='extension'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'routetest')),'Route tester',array('class'=>($action=='routetest'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'routes')),'Route dump',array('class'=>($action=='routes'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'config')),'Config dump',array('class'=>($action=='config'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'message')),'Message dump',array('class'=>($action=='message'?'active':''))) ?></li>
-				<li><?php echo html::anchor(Route::get('devtools')->uri(array('action'=>'i18n')),'i18n dump',array('class'=>($action=='i18n'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'info')),'Kohana info',array('class'=>($action=='info'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'extension')),'Transparent extension',array('class'=>($action=='extension'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'routetest')),'Route tester',array('class'=>($action=='routetest'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'routes')),'Route dump',array('class'=>($action=='routes'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'config')),'Config dump',array('class'=>($action=='config'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'message')),'Message dump',array('class'=>($action=='message'?'active':''))) ?></li>
+				<li><?php echo HTML::anchor(Route::get('devtools')->uri(array('action'=>'i18n')),'i18n dump',array('class'=>($action=='i18n'?'active':''))) ?></li>
 			</ul>
 		</div>
 		
