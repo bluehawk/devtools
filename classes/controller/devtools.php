@@ -43,7 +43,7 @@ class Controller_devtools extends Controller {
 		if ( ! $url)
 		{
 			// Try to find a config file
-			$url = Kohana::config('route-test');
+			$url = Kohana::$config->load('route-test');
 		}
 		$this->template->content = View::factory('devtools/route-test',array(
 			// Get all the tests
